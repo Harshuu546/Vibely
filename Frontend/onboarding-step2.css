@@ -1,0 +1,15 @@
+/* onboarding-step2.css */
+:root{
+  --lavender:#B8A7FF; --peach:#FFC7B2; --bg:#FAFAFE; --text:#2E2E3A;
+  --max-width:720px; --fs-md:clamp(16px,1.6vw,20px); --fs-lg:clamp(24px,2.4vw,34px);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:"Poppins",sans-serif;background:linear-gradient(180deg,var(--peach) 0%,var(--bg)70%);color:var(--text)}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+.card{width:100%;max-width:var(--max-width);background:white;border-radius:14px;padding:22px;text-align:center;box-shadow:0 12px 30px rgba(30,20,80,0.06)}
+.card__img{width:60%;max-width:300px;margin:0 auto 12px;display:block}
+.card__title{font-size:var(--fs-lg);margin:8px 0 6px;font-weight:700}
+.card__text{font-size:var(--fs-md);color:rgba(40,40,50,0.72);margin:0}
+.btn{padding:12px 22px;border-radius:12px;border:none;cursor:pointer;font-weight:700}
+.btn--primary{background:var(--lavender);color:white}
+@media(min-width:900px){ .card{padding:36px} .card__img{width:50%}}

@@ -1,43 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibely - Splash Screen</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibely — Splash</title>
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <main class="page page--centered">
+    <header class="brand">
+      <img class="brand__logo" src="https://cdn-icons-png.flaticon.com/512/849/849432.png" alt="Vibely logo">
+    </header>
 
-<div class="splash-container">
+    <section class="splash">
+      <img class="splash__illustration" src="https://cdn-icons-png.flaticon.com/512/8189/8189311.png" alt="Two roommates illustration">
+      <h1 class="splash__title">Vibely</h1>
+      <p class="splash__subtitle">A ML-based roommate finder</p>
 
-    <!-- Cute Pastel House Logo -->
-    <img src="https://cdn-icons-png.flaticon.com/512/849/849432.png" class="logo">
+      <div class="loader" aria-hidden="true" title="Loading">
+        <span class="dot dot--lavender"></span>
+        <span class="dot dot--mint"></span>
+        <span class="dot dot--peach"></span>
+      </div>
+    </section>
+  </main>
 
-    <!-- Two Roommates Illustration -->
-    <img src="https://cdn-icons-png.flaticon.com/512/8189/8189311.png" class="illustration">
-
-    <!-- App Name -->
-    <h1 class="app-title">Vibely</h1>
-
-    <!-- Tagline -->
-    <p class="tagline">A ML based roommate finder</p>
-
-    <!-- Dot Loading Animation -->
-    <div class="loader">
-        <div class="dot d1"></div>
-        <div class="dot d2"></div>
-        <div class="dot d3"></div>
-    </div>
-
-</div>
-
-<!-- Link JS -->
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #efeafe, #f5ced8);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.liked-page {
+    width: 95%;
+    max-width: 900px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.liked-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px 18px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin-top: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background: #dff5e1;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.remove-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background: #ff5c8a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove-btn:hover {
+    background: #ff4173;
+}
+
+/* Empty state */
+.empty {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    color: #555;
+}

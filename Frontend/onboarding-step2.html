@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibely — How it works</title>
+  <link rel="stylesheet" href="onboarding-step2.css">
+
+</head>
+<body>
+  <main class="page page--centered">
+    <section class="card card--onboard">
+      <img class="card__img" src="https://cdn-icons-png.flaticon.com/512/8970/8970110.png" alt="ML illustration">
+      <h2 class="card__title">ML-powered matching</h2>
+      <p class="card__text">We combine preferences and behaviour to recommend roommates who actually fit your vibe.</p>
+      <div class="card__actions">
+        <button class="btn btn--primary" id="onboard2Next">Get Started</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('onboard2Next').addEventListener('click', ()=> {
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

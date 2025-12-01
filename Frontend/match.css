@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #ffd2e8, #d8caff, #ffe3d5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-box {
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-size: 32px;
+    color: #ff6fa1;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f8c6ff;
+}
+
+#matchName {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.swipe {
+    background: #c6ffe2;
+}
+
+.profile {
+    background: #ffc9dd;
+}
+
+/* Confetti canvas */
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
