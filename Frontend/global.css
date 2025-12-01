@@ -1,0 +1,34 @@
+/* Global scaling so pages look normal on laptop & mobile */
+
+:root {
+  --max-width-mobile: 480px;
+  --max-width-desktop: 900px;
+}
+
+/* Layout base */
+.page, main, .swipe-page {
+  width: 100%;
+  max-width: var(--max-width-desktop);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Swipe container fix */
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 520px;   /* IMPORTANT — this gives card height */
+}
+
+/* Desktop scaling */
+@media (min-width: 768px) {
+  .title {
+    font-size: 38px !important;
+  }
+  .subtitle {
+    font-size: 18px !important;
+  }
+  .swipe-card {
+    transform: scale(1.02);
+  }
+}

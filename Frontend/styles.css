@@ -1,0 +1,30 @@
+/* index.css - Splash page styles */
+:root{
+  --lavender:#B8A7FF; --mint:#BFF4E3; --peach:#FFC7B2;
+  --bg:#FAFAFE; --text:#2E2E3A;
+  --max-width:720px;
+  --fs-sm:clamp(14px,1.2vw,16px);
+  --fs-lg:clamp(28px,3.2vw,42px);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:"Poppins",system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:linear-gradient(180deg,var(--lavender) 0%,var(--bg) 60%,var(--peach)100%); color:var(--text); -webkit-font-smoothing:antialiased;}
+
+.page {min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;}
+.splash-container{width:100%;max-width:var(--max-width);text-align:center;padding:28px;border-radius:12px;}
+.brand__logo{width:96px;margin:0 auto 12px;display:block;}
+.splash__illustration{width:320px;max-width:70%;display:block;margin:0 auto;}
+.splash__title{font-size:var(--fs-lg);margin:14px 0 6px;font-weight:800;}
+.splash__subtitle{font-size:var(--fs-sm);color:rgba(30,30,30,0.72);margin:0 0 12px;}
+
+.loader{display:flex;gap:10px;justify-content:center;margin-top:16px;}
+.dot{width:14px;height:14px;border-radius:50%;display:inline-block;animation:bounce 1.2s infinite}
+.dot--lavender{background:var(--lavender);animation-delay:0}
+.dot--mint{background:var(--mint);animation-delay:.18s}
+.dot--peach{background:var(--peach);animation-delay:.36s}
+@keyframes bounce{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}}
+
+/* Responsive tweaks */
+@media (min-width:900px){
+  .splash-container{padding:40px;}
+  .splash__illustration{width:420px;}
+}

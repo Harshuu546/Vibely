@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Aisha Khan",
+    "age": 23,
+    "city": "Lucknow",
+    "budget": "10k - 15k",
+    "roomType": "Separate",
+    "bio": "Organized and calm 🎀",
+    "photo": "../assets/p1.png",
+    "tags": ["Early Bird", "Non-smoker", "Clean"]
+  },
+  {
+    "name": "Riya Sharma",
+    "age": 22,
+    "city": "Noida",
+    "budget": "15k - 20k",
+    "roomType": "Shared",
+    "bio": "Loves music and cafes 💛",
+    "photo": "../assets/p2.png",
+    "tags": ["Ambivert", "Vegetarian", "Student"]
+  },
+  {
+    "name": "Sara Malik",
+    "age": 24,
+    "city": "Delhi",
+    "budget": "20k+",
+    "roomType": "Separate",
+    "bio": "WFH Designer 🌿",
+    "photo": "../assets/p3.png",
+    "tags": ["Calm", "WFH", "Pet-friendly"]
+  },
+  {
+    "name": "Neha Verma",
+    "age": 25,
+    "city": "Mumbai",
+    "budget": "20k - 25k",
+    "roomType": "Separate",
+    "bio": "Foodie + beach lover 🌊",
+    "photo": "../assets/p4.png",
+    "tags": ["Extrovert", "Night Owl", "Clean"]
+  },
+  {
+    "name": "Divya Patel",
+    "age": 23,
+    "city": "Ahmedabad",
+    "budget": "8k - 12k",
+    "roomType": "Shared",
+    "bio": "Calm & spiritual 🌸",
+    "photo": "../assets/p5.png",
+    "tags": ["Vegetarian", "Cat-friendly", "Peaceful"]
+  },
+  {
+    "name": "Kritika Rao",
+    "age": 26,
+    "city": "Bangalore",
+    "budget": "18k - 22k",
+    "roomType": "Separate",
+    "bio": "Tech girl & fitness lover 💪",
+    "photo": "../assets/p6.png",
+    "tags": ["Active", "WFH", "Clean"]
+  },
+  {
+    "name": "Tanya Kapoor",
+    "age": 21,
+    "city": "Chandigarh",
+    "budget": "10k - 15k",
+    "roomType": "Shared",
+    "bio": "Fashion + dance 💃",
+    "photo": "../assets/p7.png",
+    "tags": ["Extrovert", "Party-friendly", "Student"]
+  },
+  {
+    "name": "Nidhi Singh",
+    "age": 24,
+    "city": "Pune",
+    "budget": "12k - 18k",
+    "roomType": "Separate",
+    "bio": "Reader + chai lover ☕",
+    "photo": "../assets/p8.png",
+    "tags": ["Introvert", "Calm", "Bookworm"]
+  },
+  {
+    "name": "Shreya Jain",
+    "age": 22,
+    "city": "Jaipur",
+    "budget": "8k - 10k",
+    "roomType": "Shared",
+    "bio": "Preparing for exams 🎓",
+    "photo": "../assets/p9.png",
+    "tags": ["Quiet", "Focused", "Clean"]
+  },
+  {
+    "name": "Aarohi Mehta",
+    "age": 23,
+    "city": "Hyderabad",
+    "budget": "14k - 18k",
+    "roomType": "Separate",
+    "bio": "Plant lover 🌱",
+    "photo": "../assets/p10.png",
+    "tags": ["Plant-lover", "Calm", "Non-smoker"]
+  }
+]
