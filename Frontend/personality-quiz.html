@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibely — Personality Quiz</title>
+ <link rel="stylesheet" href="personality-quiz.css">
+
+</head>
+<body>
+  <main class="page page--centered">
+    <section class="card card--quiz">
+      <header class="card__header">
+        <h2 class="card__title">Let’s know your vibe</h2>
+        <p class="card__small">This helps Vibely recommend roommates</p>
+      </header>
+
+      <div id="quizArea" class="quiz-area" aria-live="polite"></div>
+
+      <div class="quiz-nav">
+        <button id="prevBtn" class="btn btn--ghost">Back</button>
+        <div class="quiz-progress" id="progressText">0 / 0</div>
+        <button id="nextBtn" class="btn btn--primary">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="personality-quiz.js"></script>
+</body>
+</html>

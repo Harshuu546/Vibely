@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibely — Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<main class="page">
+  <section class="card">
+
+    <!-- Greeting -->
+    <h1 class="title">Hi <span id="dashName">User</span> 👋</h1>
+    <p class="subtitle">Welcome to your Vibely dashboard</p>
+
+    <!-- Profile summary -->
+    <div class="section profile-section">
+      <h2 class="section-title">Your Profile</h2>
+
+      <div class="profile-overview">
+        <div id="dashPhoto" class="photo-box">No image</div>
+
+        <div class="profile-info">
+          <p><strong>City:</strong> <span id="dashCity"></span></p>
+          <p><strong>Budget:</strong> <span id="dashBudget"></span></p>
+          <p><strong>Room Type:</strong> <span id="dashRoomType"></span></p>
+
+          <button id="editProfileBtn" class="btn btn--ghost small-btn">Edit Profile</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz summary -->
+    <div class="section quiz-section">
+      <h2 class="section-title">Your Quiz Summary</h2>
+      <p class="small">Your answers help us find your ideal roommate.</p>
+
+      <button id="viewQuizBtn" class="btn btn--ghost small-btn">View Quiz</button>
+    </div>
+
+    <!-- NEW: Swipe button -->
+    <div class="section swipe-section">
+      <h2 class="section-title">Find Roommates</h2>
+      <p class="small">Start discovering people who match your vibe.</p>
+
+      <button id="swipeBtn" class="btn btn--primary big-btn">🔍 Find Matches</button>
+    </div>
+
+  </section>
+</main>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

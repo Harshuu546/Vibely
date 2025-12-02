@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibely — Login</title>
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+  <main class="page page--centered">
+    <section class="card">
+      <h2 class="card__title">Welcome back</h2>
+      <p class="card__text">Log in to continue</p>
+
+      <form id="loginForm" class="form" novalidate>
+        <label class="field">
+          <span class="field__label">Email</span>
+          <input class="input" type="email" id="loginEmail" required placeholder="you@example.com">
+        </label>
+
+        <label class="field">
+          <span class="field__label">Password</span>
+          <input class="input" type="password" id="loginPassword" required placeholder="••••••••">
+        </label>
+
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary">Login</button>
+        </div>
+      </form>
+
+      <p class="card__small">Don't have an account? <a class="link" href="signup.html">Sign up</a></p>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      // UI demo flow - replace with API call later
+      alert('Login successful (UI demo)');
+      window.location.href = 'personality-quiz.html';
+    });
+  </script>
+</body>
+</html>

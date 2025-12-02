@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibely — Welcome</title>
+  <link rel="stylesheet" href="onboarding.css">
+
+</head>
+<body>
+  <main class="page page--centered">
+    <section class="card card--onboard">
+      <img class="card__img" src="https://cdn-icons-png.flaticon.com/512/8189/8189311.png" alt="Welcome illustration">
+      <h2 class="card__title">Find your perfect roommate</h2>
+      <p class="card__text">Match with people who share your habits, values and lifestyle — effortlessly.</p>
+      <div class="card__actions">
+        <button class="btn btn--primary" id="onboardNext">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('onboardNext').addEventListener('click', ()=> {
+      window.location.href = 'onboarding-step2.html';
+    });
+  </script>
+</body>
+</html>

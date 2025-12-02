@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Vibely</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Settings ⚙️</h1>
+
+        <div class="profile-box">
+            <img id="profilePhoto" class="profile-img" src="">
+            <h2 id="profileName"></h2>
+            <p id="profileCity"></p>
+        </div>
+
+        <div class="settings-list">
+
+            <div class="setting-item" onclick="goTo('edit-profile.html')">
+                ✏️ Edit Profile
+            </div>
+
+            <div class="setting-item" onclick="goTo('quiz-results.html')">
+                🧠 Personality Quiz Results
+            </div>
+
+            <div class="setting-item" onclick="clearLikes()">
+                💔 Clear Liked Profiles
+            </div>
+
+            <div class="setting-item" onclick="deleteAccount()">
+                🗑 Delete Account
+            </div>
+
+            <div class="setting-item" onclick="logout()">
+                🚪 Logout
+            </div>
+
+            <div class="setting-item about">
+                💜 Vibely – A Smart Roommate Finder  
+                <br><span class="small">Version 1.0</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

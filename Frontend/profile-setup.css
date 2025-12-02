@@ -1,0 +1,61 @@
+/* profile-setup.css — responsive multi-step profile setup (pastel) */
+
+/* variables */
+:root{
+  --lavender:#B8A7FF;
+  --peach:#FFC7B2;
+  --mint:#BFF4E3;
+  --bg:#FAFAFE;
+  --text:#2E2E3A;
+
+  --max-width:720px;
+  --radius:14px;
+}
+
+/* base */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:"Poppins",system-ui, -apple-system, "Segoe UI", Roboto, Arial; background: linear-gradient(180deg,var(--bg) 0%, var(--lavender) 40%, var(--peach) 100%); color:var(--text); -webkit-font-smoothing:antialiased}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+.card{width:100%;max-width:var(--max-width);background:white;border-radius:var(--radius);padding:22px;box-shadow:0 12px 36px rgba(30,20,80,0.06)}
+.card--profile{display:flex;flex-direction:column;gap:10px}
+
+/* header */
+.card__title{font-size:clamp(20px,2.8vw,32px);margin:0;font-weight:700}
+.card__small{font-size:clamp(13px,1.2vw,15px);color:rgba(40,40,50,0.75);margin:4px 0 6px}
+.progress{margin-top:6px;font-size:13px;color:rgba(30,30,30,0.6)}
+
+/* form layout */
+.profile-form{display:flex;flex-direction:column;gap:10px}
+.form-step{display:block}
+.field{display:flex;flex-direction:column;margin-bottom:10px}
+.field__label{font-size:14px;color:rgba(30,30,30,0.8);margin-bottom:6px}
+.input{padding:12px 14px;border-radius:10px;border:1px solid rgba(0,0,0,0.06);font-size:15px}
+textarea.input{resize:vertical}
+
+/* rows for two-column on wide screens */
+.row{display:flex;flex-direction:column;gap:12px}
+@media(min-width:900px){ .row{flex-direction:row} .row .field{flex:1} }
+
+/* image upload */
+.image-upload{display:flex;gap:12px;align-items:center}
+.photo-preview{width:92px;height:92px;border-radius:10px;background:#fbfbff;border:1px dashed rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(30,30,30,0.45);overflow:hidden}
+.photo-preview img{width:100%;height:100%;object-fit:cover}
+
+/* helpers */
+.helper{font-size:13px;color:rgba(30,30,30,0.6);margin-top:4px}
+
+/* nav */
+.form-nav{display:flex;align-items:center;justify-content:space-between;margin-top:8px;gap:12px}
+.nav-right{display:flex;gap:10px;align-items:center}
+.btn{padding:10px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:700;font-size:15px}
+.btn--primary{background:var(--lavender);color:white;box-shadow:0 8px 24px rgba(120,90,255,0.08)}
+.btn--ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--text)}
+
+/* disabled state */
+.btn[disabled]{opacity:0.6;cursor:not-allowed;transform:none}
+
+/* small responsive tweaks */
+@media (max-width:480px){
+  .card{padding:18px}
+  .photo-preview{width:72px;height:72px}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Vibely</title>
+    <link rel="stylesheet" href="edit-profile.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Edit Profile ✨</h1>
+
+        <div class="photo-section">
+            <img id="profilePhoto" class="profile-img" src="" alt="Photo">
+            <input type="file" id="photoInput" accept="image/*">
+        </div>
+
+        <form id="editForm">
+
+            <label>Name</label>
+            <input type="text" id="name">
+
+            <label>City</label>
+            <input type="text" id="city">
+
+            <label>Budget</label>
+            <select id="budget">
+                <option value="5k">5k</option>
+                <option value="8k">8k</option>
+                <option value="10k">10k</option>
+                <option value="12k">12k</option>
+                <option value="15k">15k+</option>
+            </select>
+
+            <label>Room Type</label>
+            <select id="roomType">
+                <option value="Shared">Shared</option>
+                <option value="Private">Private</option>
+            </select>
+
+            <label>Personality</label>
+            <select id="personality">
+                <option value="Introvert">Introvert</option>
+                <option value="Extrovert">Extrovert</option>
+                <option value="Ambivert">Ambivert</option>
+            </select>
+
+            <label>Pets</label>
+            <select id="pets">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label>Bio</label>
+            <textarea id="bio" rows="4"></textarea>
+
+            <button class="save-btn" type="submit">Save Changes</button>
+        </form>
+
+    </div>
+
+    <script src="edit-profile.js"></script>
+
+</body>
+</html>
